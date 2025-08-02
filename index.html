@@ -13,35 +13,36 @@
     <div class="container calculator p-4 rounded">
         <div class="row mb-3">
             <div class="col-12">
-                <input type="text" id="display" class="form-control text-end display" readonly />
+                <input type="text" id="display" class="form-control text-end display" value=""/>
             </div>
         </div>
         <div class="row g-3 text-center">
-            <div class="col-3"><button class="btn calc-btn">AC</button></div>
-            <div class="col-3"><button class="btn calc-btn">DEL</button></div>
-            <div class="col-3"><button class="btn calc-btn">.</button></div>
-            <div class="col-3"><button class="btn calc-btn">/</button></div>
+            <div class="col-3"><button onclick="clearall()" class="btn calc-btn">AC</button></div>
+            <div class="col-3"><button onclick="clearall()" class="btn calc-btn">DEL</button></div>
+            <div class="col-3"><button onclick="getvalue('.')" class="btn calc-btn">.</button></div>
+            <div class="col-3"><button onclick="getvalue('/')" class="btn calc-btn">/</button></div>
 
-            <div class="col-3"><button class="btn calc-btn">7</button></div>
-            <div class="col-3"><button class="btn calc-btn">8</button></div>
-            <div class="col-3"><button class="btn calc-btn">9</button></div>
-            <div class="col-3"><button class="btn calc-btn">*</button></div>
+            <div class="col-3"><button onclick="getvalue('7')" class="btn calc-btn">7</button></div>
+            <div class="col-3"><button onclick="getvalue('8')" class="btn calc-btn">8</button></div>
+            <div class="col-3"><button onclick="getvalue('9')" class="btn calc-btn">9</button></div>
+            <div class="col-3"><button onclick="getvalue('*')" class="btn calc-btn">*</button></div>
 
-            <div class="col-3"><button class="btn calc-btn">4</button></div>
-            <div class="col-3"><button class="btn calc-btn">5</button></div>
-            <div class="col-3"><button class="btn calc-btn">6</button></div>
-            <div class="col-3"><button class="btn calc-btn">-</button></div>
+            <div class="col-3"><button onclick="getvalue('4')" class="btn calc-btn">4</button></div>
+            <div class="col-3"><button onclick="getvalue('5')" class="btn calc-btn">5</button></div>
+            <div class="col-3"><button onclick="getvalue('6')" class="btn calc-btn">6</button></div>
+            <div class="col-3"><button onclick="getvalue('-')" class="btn calc-btn">-</button></div>
 
-            <div class="col-3"><button class="btn calc-btn">1</button></div>
-            <div class="col-3"><button class="btn calc-btn">2</button></div>
-            <div class="col-3"><button class="btn calc-btn">3</button></div>
-            <div class="col-3"><button class="btn calc-btn">+</button></div>
+            <div class="col-3"><button onclick="getvalue('1')" class="btn calc-btn">1</button></div>
+            <div class="col-3"><button onclick="getvalue('2')" class="btn calc-btn">2</button></div>
+            <div class="col-3"><button onclick="getvalue('3')" class="btn calc-btn">3</button></div>
+            <div class="col-3"><button onclick="getvalue('+')" class="btn calc-btn">+</button></div>
 
-            <div class="col-3"><button class="btn calc-btn">00</button></div>
-            <div class="col-3"><button class="btn calc-btn">0</button></div> 
-            <div class="col-6"><button class="btn calc-btn zero">=</button></div>
+            <div class="col-3"><button onclick="getvalue('00')" class="btn calc-btn">00</button></div>
+            <div class="col-3"><button onclick="getvalue('0')" class="btn calc-btn">0</button></div> 
+            <div class="col-6"><button onclick="answer()" class="btn calc-btn zero">=</button></div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
